@@ -62,6 +62,25 @@ li {
 
 /** ====== Header ====== */
 
+.navbar {
+   transition: all .2s ease;
+}
+
+.navbar-scrolled {
+   background-color: rgba($color: #000000, $alpha: .6) !important;
+   backdrop-filter: blur(1rem);
+}
+
+.nav-item {
+   &:hover {
+      background: rgba($color: #fff, $alpha: .125);
+   }
+
+   &:last-child:hover {
+      background: $red !important;
+   }
+}
+
 .nav-link {
    line-height: 32px;
 }
@@ -121,6 +140,15 @@ li {
 
    &__more {
       display: flex;
+      button {
+         transition: all .2s ease !important;
+         &:first-child:hover {
+            background: $red !important;
+         }
+         &:last-child:hover {
+            transform: scale(1.1);
+         }
+      }
    }
 }
 
@@ -263,6 +291,11 @@ li {
          transform: scale(.85) translateY(-.5rem) translateX(-50%);
       }
    }
+   &__submit {
+      &:hover {
+         background: WhiteSmoke !important;
+      }
+   }
 }
 
 /* ========== Footer ========== */
@@ -307,6 +340,10 @@ li {
       color: $red;
       font-size: 1.25rem;
       cursor: pointer;
+      transition: .2s ease all;
+      &:hover {
+         background: rgb(61, 61, 61) !important;
+      }
    }
 }
 

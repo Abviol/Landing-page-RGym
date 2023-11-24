@@ -52,6 +52,22 @@ li {
 }
 
 /** ====== Header ====== */
+.navbar {
+  transition: all 0.2s ease;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(1rem);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.125);
+}
+.nav-item:last-child:hover {
+  background: #E74C3C !important;
+}
+
 .nav-link {
   line-height: 32px;
 }
@@ -104,6 +120,15 @@ li {
 }
 .home__more {
   display: flex;
+}
+.home__more button {
+  transition: all 0.2s ease !important;
+}
+.home__more button:first-child:hover {
+  background: #E74C3C !important;
+}
+.home__more button:last-child:hover {
+  transform: scale(1.1);
 }
 
 /** ========== Popular ========== */
@@ -230,6 +255,9 @@ li {
 .contact__form .form-floating > .form-control:not(:placeholder-shown):not(:focus) ~ label {
   transform: scale(0.85) translateY(-0.5rem) translateX(-50%);
 }
+.contact__submit:hover {
+  background: WhiteSmoke !important;
+}
 
 /* ========== Footer ========== */
 .footer__description {
@@ -267,6 +295,10 @@ li {
   color: #E74C3C;
   font-size: 1.25rem;
   cursor: pointer;
+  transition: 0.2s ease all;
+}
+.footer__social:hover {
+  background: rgb(61, 61, 61) !important;
 }
 
 /* ========== Media queries ========== */
