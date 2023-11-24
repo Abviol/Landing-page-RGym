@@ -215,11 +215,12 @@ li {
    &__img {
       padding: 0!important;
    }
-   &__col:nth-child(2) {
-      margin-top: -7rem;
-   }
-   &__col:nth-child(3) {
-      margin-top: -18rem;
+      &__col:nth-child(2) {
+         margin-top: -7rem;
+      }
+   
+      &__col:nth-child(3) {
+         margin-top: -18rem;
    }
    &__title {
       font-size: 1.5rem!important;
@@ -270,14 +271,22 @@ li {
    &__description {
       line-height: 200%;
    }
+   &__col-heading {
+      text-wrap: nowrap;
+   }
    &__col-item {
-      transition: transform .2s ease;
-      transform: translateX(0) !important;
+      a {
+         transition: transform .2s ease;
+         display: inline-block;
+         transform: translateX(0) !important;
+      }
       &:hover {
-         transform: translateX(1rem) !important;
-         a::after {
-            width: 100%;
-         } 
+         a {
+            transform: translateX(1rem) !important;
+            &::after {
+               width: 100%;
+            }
+         }
       }
    }
    &__link {
@@ -314,6 +323,11 @@ li {
       }
    }
    
+   .photos {
+      .item-with-decor p {
+         font-size: 1.5rem;
+      }
+   }
 }
 
 /* ------- For large devices ------- */
@@ -323,13 +337,63 @@ li {
          margin-left: 66px;
       }
    }
+
+   .welcome {
+      .row {
+         column-gap: 2rem;
+         .col {
+            row-gap: 3rem;
+         }
+      }
+      &__col:nth-child(2) {
+         margin-top: -5rem;
+      }
+      &__col:nth-child(3) {
+         margin-top: -12rem;
+      }
+   }
 }
 
 /* ------- For medium devices ------- */
 @media only screen and (max-width: 991px) {
+   .section {
+      &-padding {
+         padding-top: 6rem !important;
+         padding-bottom: 6rem !important;
+      }
+      &__title {
+         font-size: 2rem;
+      }
+      &__subtitle {
+         font-size: 1.5rem;
+      }
+      &__description {
+         font-size: 1rem;
+      }
+   }
+
    .home {
       & .home__info {
          margin-left: 36px;
+      }
+   }
+
+   .photos {
+      .item-with-decor p {
+         font-size: 1rem;
+      }
+   }
+
+   .training {
+      &__text {
+         padding-left: 2rem;
+         padding-right: 4rem !important;
+      }
+   }
+
+   .contact {
+      &__title {
+         font-size: 1.75rem;
       }
    }
 }
@@ -337,6 +401,13 @@ li {
 
 /* ------- For small devices ------- */
 @media only screen and (max-width: 767px) {
+   // .section {
+   //    &-padding {
+   //       padding-top: 4rem !important;
+   //       padding-bottom: 4rem !important;
+   //    }
+   // }
+
    .navbar-nav {
       text-align: center;
    }
@@ -352,5 +423,126 @@ li {
    }
    .home__more {
       justify-content: center;
+   }
+
+   .popular {
+      &__decor {
+         svg {
+            width: 125px;
+         }
+      }
+   }
+
+   .photos {
+      padding-bottom: 2rem !important;
+      &__items {
+         flex-wrap: wrap;
+         
+      }
+      &__item {
+         flex: calc(50% - 1rem) 0 0;
+         &:nth-child(odd) {
+            margin-right: 2rem;
+            .item__container {
+                  margin-top: -2rem;
+               }
+         } 
+         &:nth-child(even) .item__container {
+            margin-top: 2rem;
+         }
+      }
+      .item-with-decor p {
+         font-size: 1.75rem;
+      }
+   }
+
+   .plans__description {
+      text-align: center;
+      &::before {
+         width: 100px;
+         height: 2px;
+         top: 0;
+         left: 50%;
+         transform: translate(-50%, -10px);
+      }
+   }     
+   .training {
+      margin-bottom: 0;
+      padding-top: 2rem !important;
+      padding-bottom: 4rem !important;
+      &__text {
+         width: 100%;
+         padding: 0 1rem !important;
+      }
+   }
+
+   .welcome {
+      &__col {
+         flex: 100% 0 0 !important; 
+      }
+
+      &__col:nth-child(2) {
+         margin-top: 0;
+      }
+
+      &__col:nth-child(3) {
+         margin-top: 0;
+      }
+   }
+
+   .footer {
+      padding-bottom: 2rem !important;
+   }
+
+   .copyright {
+      p {
+         font-size: .75rem;
+      }
+   }
+}
+
+/* ------- For xs devices ------- */
+@media only screen and (max-width: 576px) {
+   .section {
+      &__description {
+         font-size: .875rem;
+      }
+      &__title {
+         font-size: 1.5rem;
+      }
+      &__subtitle {
+         font-size: 1.25rem;
+      }
+   }
+
+   .photos {
+      padding-bottom: 2rem !important;
+      &__items {
+         flex-wrap: wrap;
+      }
+      &__item {
+         flex: calc(50% - .5rem) 0 0;
+         &:nth-child(odd) {
+            margin-right: 1rem;
+            .item__container {
+               margin-top: -2rem;
+            }
+         }
+         &:nth-child(even) .item__container {
+            margin-top: 1rem;
+         }
+      }
+      .item-with-decor p {
+         font-size: 1.25rem;
+      }
+   }
+
+   .footer {
+      &__col-heading {
+         font-size: 1.125rem;
+      }
+      &__link {
+         font-size: .875rem;
+      }
    }
 }
