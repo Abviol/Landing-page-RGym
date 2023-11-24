@@ -1,1 +1,401 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <!--* Start Bootstrap styles -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <!--* End Bootstrap styles -->
+
+   <!--* Start Bootstrap icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <!--* End Bootstrap icons -->
+
+   <!--* Start Remix icons -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+   <!--* End Remix icons -->
+
+   <title>Document</title>
+</head>
+
+<body class="bg-black">
+
+   <!--* Start header -->
+   <header class="header fixed-top" id="header">
+
+      <nav class="navbar navbar-expand-lg bg-transparent">
+         <div class="container-xl container-fluid">
+            <a href="#" class="navbar-brand text-light ff-poppins fs-1 me-4 fw-bold">
+               <span class="text-red">R</span>Gym
+            </a>
+            <div class="header__times d-none d-sm-flex">
+               <img src="./assets/imgs/i-clock.svg" alt="" class="icon me-2">
+               <p class="fs-6 text-light m-0">Mon - Fri : 8:00 am - 7:00 pm</p>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+               aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="bi bi-list text-light fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarMenu">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a href="training" class="nav-link text-light px-4 py-2 active">Traning</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="studio-classes" class="nav-link text-light px-4 py-2">Studio Classess</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="lifestyle" class="nav-link text-light px-4 py-2">Lifestyle</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="contact" class="nav-link px-4 py-2 text-light bg-red">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!--* End header -->
+
+   <main>
+      <!--* Start home section -->
+
+      <section class="home" id="home">
+         <div class="home__background">
+            <div class="home__gradient"></div>
+            <img src="assets/imgs/home.png" alt="">
+         </div>
+         <div class="container-xl container-fluid d-flex justify-content-center justify-content-md-start">
+            <div class="home__info">
+               <h1 class="home__title">Making <br>
+                  Different from <br>
+                  other builders<span class="text-red">.</span>
+               </h1>
+               <div class="home__more mt-4">
+                  <button class="nav-link px-3 py-0 px-lg-4 py-lg-2 text-light bg-red">Get started</button>
+                  <button class="btn ms-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                        <path
+                           d="M17.685 13.7805L17.6852 13.7806L27.8498 20.5556L27.8501 20.5558C27.8958 20.5863 27.9333 20.6275 27.9592 20.6759C27.9852 20.7243 27.9987 20.7784 27.9987 20.8333C27.9987 20.8883 27.9852 20.9423 27.9592 20.9907C27.9333 21.0392 27.8958 21.0804 27.8501 21.1108L27.8498 21.111L17.6842 27.8853C17.684 27.8855 17.6838 27.8856 17.6836 27.8857C17.6336 27.9187 17.5756 27.9376 17.5157 27.9405C17.4556 27.9433 17.3959 27.9298 17.3428 27.9015L17.1071 28.3424L17.3428 27.9015C17.2898 27.8731 17.2454 27.8309 17.2144 27.7794L16.786 28.0371L17.2144 27.7794C17.1835 27.728 17.167 27.6693 17.1667 27.6095V14.0572C17.1668 13.9969 17.1832 13.9378 17.2143 13.8861C17.2454 13.8344 17.2899 13.7921 17.343 13.7637C17.3962 13.7353 17.4561 13.7219 17.5163 13.7249C17.5766 13.7278 17.6348 13.747 17.685 13.7805ZM20.8333 41.1667C9.60323 41.1667 0.5 32.0634 0.5 20.8333C0.5 9.60323 9.60323 0.5 20.8333 0.5C32.0634 0.5 41.1667 9.60323 41.1667 20.8333C41.1667 32.0634 32.0634 41.1667 20.8333 41.1667ZM20.8333 38C25.3862 38 29.7526 36.1914 32.972 32.972C36.1914 29.7526 38 25.3862 38 20.8333C38 16.2805 36.1914 11.914 32.972 8.69467C29.7526 5.47529 25.3862 3.66667 20.8333 3.66667C16.2805 3.66667 11.914 5.47529 8.69467 8.69467C5.47529 11.914 3.66667 16.2805 3.66667 20.8333C3.66667 25.3862 5.47529 29.7526 8.69467 32.972C11.914 36.1914 16.2805 38 20.8333 38Z"
+                           fill="white" stroke="black" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--* End home section -->
+
+      <!--* Start popular section -->
+      <section class="popular section-padding" id="popular">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="popular__header section__header text-center text-transperant">
+                     <h2 class="fs-1 mb-5 fw-bold popular__title section__title">
+                        Popular Exercise
+                     </h2>
+                     <p  class="mb-5 fw-normal popular__description section__description mx-auto">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, eligendi voluptatum. Ex veniam
+                        aliquid tempora ut
+                        perferendis, quos enim vitae non laboriosam minus magnam cumque!
+                     </p>
+                     <div class="popular__decor">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="165" height="28" viewBox="0 0 165 28"
+                           fill="none">
+                           <path d="M1 26L24.2857 2L47.5714 26L70.8571 2L94.1429 26L117.429 2L140.714 26L164 2"
+                              stroke="#E74C3C" stroke-width="2" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--* End popular section -->
+
+      <!--* Start photos section -->
+      <section id="photos" class="photos">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="photos__items col-md-12 d-flex list-group-horizontal px-0 w-100">
+                  <div class="photos__item">
+                     <div class="item__container">
+                        <div class="item-with-decor text-center">
+                           <img src="./assets/imgs/pop-1.png" alt="">
+                           <p class="text-transperant fw-semibold">See workout</p>
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                 fill="none">
+                                 <line x1="19" y1="20" x2="19" y2="4.37112e-08" stroke="#E74C3C" stroke-width="2" />
+                                 <line x1="20" y1="20" x2="8.74228e-08" y2="20" stroke="#E74C3C" stroke-width="2" />
+                              </svg>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="photos__item">
+                     <div class="item__container">
+                        <img src="./assets/imgs/pop-2.png" alt="">
+                     </div>
+                  </div>
+                  <div class="photos__item">
+                     <div class="item__container">
+                        <img src="./assets/imgs/pop-3.png" alt="">
+                     </div>
+                  </div>
+                  <div class="photos__item">
+                     <div class="item__container">
+                        <img src="./assets/imgs/pop-4.png" alt="">
+                     </div>
+                  </div>
+                  <div class="photos__item">
+                     <div class="item__container">
+                        <img src="./assets/imgs/pop-5.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--* End photos section -->
+
+      <!--* Start plans section -->
+      <section id="plans" class="plans section-padding">
+         <div class="container">
+            <div class="row d-flex align-items-center">
+               <div class="col-5">
+                  <h2 class="plans__title fs-2 fw-semibold text-transperant">
+                     The ultimate online <br>
+                     online personal <br>
+                     training plans
+                  </h2>
+               </div>
+               <div class="col-md-7">
+                  <p class="plans__description section__description text-transperant">
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ipsam. Nobis laboriosam, possimus
+                     impedit
+                     dolores, voluptatem unde laborum aspernatur ipsam earum pariatur provident neque recusandae
+                     consequuntur
+                     illo vel illum iste id expedita fuga culpa nostrum aperiam natus!
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--* End plans section -->
+
+      <!--* Start training section -->
+      <section id="training" class="training">
+         <div class="container-fluid px-0">
+            <div class="row mx-0">
+               <div class="col-6 position-relative px-0">
+                  <div class="training__img">
+                     <img src="./assets/imgs/pers.png" alt="">
+                  </div>
+               </div>
+               <div class="col-6 d-flex align-items-center px-0 position-relative">
+                  <div class="training__text d-flex flex-column">
+                     <h2 class="section__title text-transperant mb-4">Personal training</h2>
+                     <h3 class="section__subtitle text-transperant mb-3">Gym time optimized</h3>
+                     <p class="text-transperant section__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, tempora
+                        soluta
+                        reprehenderit minima aspernatur expedita placeat maxime! Deleniti fuga illo sunt eum asperiores,
+                        mollitia, sit optio molestias numquam exercitationem adipisci!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <!--* End training section -->
+
+      <!--* Start welcome section -->
+      <section id="welcome" class="welcome section-padding">
+         <div class="container-fluid px-0">
+            <div class="row mx-0">
+               <div class="welcome__col col">
+                  <div class="row">
+                     <div class="welcome__img">
+                        <img src="./assets/imgs/welcome-2.png" alt="">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="welcome__img">
+                        <img src="./assets/imgs/welcome-5.png" alt="">
+                     </div>
+                  </div>
+               </div>
+               <div class="welcome__col col gy-5">
+                  <div class="row">
+                     <div class="welcome__img">
+                        <img src="./assets/imgs/welcome-3.png" alt="">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="welcome__text text-transperant text-center">
+                        <h2 class="welcome__title section__title pb-4">Welcome to <span class="text-red">R</span>Gym
+                        </h2>
+                        <p class="welcome__description section__secription">Lorem ipsum dolor sit amet, consectetur
+                           <br>adipiscing elit. Aliquam dui neque sa gittis <br>magna erat sagittis morbi. Id
+                           libero.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="welcome__col col">
+                  <div class="row">
+                     <div class="welcome__img">
+                        <img src="./assets/imgs/welcome-1.png" alt="">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="welcome__img">
+                        <img src="./assets/imgs/welcome-4.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--* End welcome section -->
+
+      <!--* Start contact section -->
+      <section id="contact" class="contact section-padding">
+         <div class="contact__container container-fluid px-0 position-relative">
+            <div class="contact__background">
+               <img src="./assets/imgs/contact.png" alt="">
+            </div>
+            <div class="contact__text row position-absolute w-100">
+               <div class="col">
+                  <div class="row mb-5 justify-content-center">
+                     <div class="col-12 col-lg-6">
+                        <h2 class="contact__title section__title text-center text-transperant">Subscribe to our newsletter</h2>
+                        <p class="contact__description section__description text-center text-transperant">Lorem ipsum dolor sit amet,
+                           consectetur
+                           adipiscing
+                           elit. Aliquam dui neque.</p>
+                     </div>
+                  </div>
+                  <div class="row justify-content-center z-3">
+                     <div class="col-12 col-md-6 col-ld-4 col-xl-3">
+                        <form class="contact__form" novalidate>
+                           <div class="mb-3 form-floating">
+                              <input type="email" id="email" class="form-control rounded-0 shadow-none border-1 bg-transparent border-white-focus text-transperant" required placeholder="Your Email Here">
+                              <label for="email" class="text-white">Enter Email</label>
+                              
+                              <div class="invalid-feedback">Invalid email</div>
+                              <div class="valid-feedback">Correct email</div>
+                           </div>
+                           <button type="submit" class="contact__submit btn bg-white rounded-0 text-black py-3 w-100 fw-medium">Submit</button>
+
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--* End contact section -->
+
+      <!--* Start footer -->
+      <footer id="footer" class="footer section-padding pt-0">
+         <div class="container">
+            <div class="row">
+               <div class="col-4">
+                  <h2 class="footer__brand text-transperant ff-poppins fs-1 me-4 fw-bold">
+                     <span class="text-red">R</span>Gym
+                  </h2>
+                  <p class="footer__description section__description text-transperant">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio nostrum aspernatur accusamus</p>
+               </div>
+               <div class="col-2 pt-2">
+                  <h5 class="footer__col-heading mb-4 text-transperant">Information</h5>
+                  <ul class="ps-0">
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant">About us</a>
+                     </li>
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">Lifstyle</a>
+                     </li>
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">Fitness</a>
+                     </li>
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">Pricing</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-1"></div>
+               <div class="col-2 pt-2">
+                  <h5 class="footer__col-heading mb-4 text-transperant">More Links</h5>
+                  <ul class="ps-0">
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">Gallery</a>
+                     </li>
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">ClubLocation</a>
+                     </li>
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">Behind the scence</a>
+                     </li>
+                     <li class="mb-1 py-2 footer__col-item">
+                        <a href="#" class="footer__link link link-underline link-underline-opacity-0 text-transperant ">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-3 pt-2">
+                  <h5 class="footer__col-heading mb-4 text-transperant">Follow Us On!</h5>
+                  <div class="footer__socials d-flex">
+                     <a href="https://www.facebook.com" target="_blank" class="footer__social link-underline link-underline-opacity-0 px-2 py-1 me-2">
+                        <i class="ri-facebook-fill"></i>
+                     </a>
+                     <a href="https://twitter.com" target="_blank" class="footer__social link-underline link-underline-opacity-0 px-2 py-1 me-2">
+                        <i class="ri-twitter-x-line"></i>
+                     </a>
+                     <a href="https://www.instagram.com" target="_blank" class="footer__social link-underline link-underline-opacity-0 px-2 py-1 me-2">
+                        <i class="ri-instagram-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--* End footer -->
+
+      <!--* Start copyright -->
+      <div class="copyright">
+         <div class="container-fluid">
+            <div class="row py-2 text-center">
+               <p class="text-transperant">
+                  Copyright © 2021 <span class="text-red">R</span>Gym. All Rights Reserved.
+               </p>
+            </div>
+         </div>
+      </div>
+      <!--* End copyright -->
+
+   </main>
+
+
+   <!--* Start Bootstrap scripts -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+   <script>
+      const form = document.querySelector("form")
+      form.addEventListener('submit', e => {
+         if (!form.checkValidity()) {
+            e.preventDefault()
+         }
+         form.classList.add('was-validated')
+      })
+   </script>
+   <!--* End Bootstrap scripts -->
+</body>
+
+</html>
