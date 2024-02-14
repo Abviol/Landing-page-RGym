@@ -12,3 +12,9 @@ firebase-debug.*.log*
 
 # Firebase 
 ./public/*
+./public/*.*
+./public/assets/*
+./public/assets/css/*
+./public/assets/imgs/*
+./public/assets/js/*
+./public/assets/scss/*
